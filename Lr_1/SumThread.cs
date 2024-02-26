@@ -22,15 +22,15 @@ namespace Lr_1
         public void Run()
         {
             long sum = 0;
-            int terms = 0;
+            int additions = 0;
             bool isStop = false;
             do
             {
-                sum+=terms*step;
-                terms++;
+                sum+= additions * step;
+                additions++;
                 isStop = stopThread.IsCanStop();
             } while (!isStop);
-            Console.WriteLine($"Thread {id} - Sum: {sum} - Terms: {terms}");
+            Console.WriteLine($"Thread {id} - Sum: {sum} - Additions: {additions}");
         }
     }
 }

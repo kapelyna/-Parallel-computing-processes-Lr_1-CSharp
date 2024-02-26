@@ -13,7 +13,7 @@ namespace Lr_1
         {
             StopThread stopThread = new StopThread();
 
-            for(int i = 1;i<=5;i++)
+            for(int i = 1;i<=10;i++)
             {
                 SumThread sumThread = new SumThread(i, stopThread,1);
                 Thread thread = new Thread(new ThreadStart(sumThread.Run));
